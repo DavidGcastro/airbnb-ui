@@ -6,7 +6,10 @@ const styles = {
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    margin: 25
+    marginTop: 40,
+    marginRight: 20,
+    marginLeft: 20,
+    marginBottom: 20,
   }
 };
 

@@ -11,7 +11,7 @@ const Title = () => {
       </View>
       <View style={styles.textIconContainer}>
         <Text style={styles.viewAll}>View All</Text>
-        <Icon type="MaterialIcons" name="navigate-next" />
+        <Icon type="feather" name="arrow-right" />
       </View>
     </View>
   );
