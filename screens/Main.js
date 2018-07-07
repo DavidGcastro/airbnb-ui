@@ -1,14 +1,16 @@
 import React from 'react';
-import { View } from 'react-native';
+import { View, Text } from 'react-native';
 import Search from '../components/Search';
 import styles from '../styles/main';
-import { Text, h1 } from 'react-native-elements';
+import Title from '../components/Title';
 
 const Main = () => {
   return (
-    <View style={styles.container}>
-      <Search />
-      <Text h3>Top Trending</Text>
+    <View style={styles.wrapper}>
+      <View style={styles.container}>
+        <Search />
+        <Title />
+      </View>
     </View>
   );
 };

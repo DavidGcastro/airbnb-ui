@@ -1,5 +1,6 @@
 import React from 'react';
 import { Text, View } from 'react-native';
+import { Font, AppLoading } from 'expo';
 import { createStackNavigator } from 'react-navigation';
 // Screens
 import Main from './screens/Main';
@@ -14,7 +15,22 @@ const RootNavigator = createStackNavigator(
 );
 
 export default class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      fontLoaded: false
+    };
+  }
+  async componentDidMount() {
+    await Font.loadAsync({
+      montserrat: require('./assets/fonts/Montserrat/Montserrat-Regular.ttf')
+    });
+    this.setState({ fontLoaded: true });
+  }
   render() {
-    return <RootNavigator />;
+    if (this.state.fontLoaded) {
+      return <RootNavigator />;
+    }
+    return <AppLoading />;
   }
 }
