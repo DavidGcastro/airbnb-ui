@@ -8,11 +8,9 @@ import Slide from '../components/Slide';
 const Main = () => {
   return (
     <View style={styles.wrapper}>
-      <View style={styles.container}>
-        <Search />
-        <Title />
-        <Slide />
-      </View>
+      <Search />
+      <Title />
+      <Slide />
     </View>
   );
 };

@@ -8,7 +8,6 @@ const styles = {
   mainLabel: {
     paddingTop: 20,
     fontFamily: 'montserrat',
-
     fontSize: 20
   },
   viewAll: {

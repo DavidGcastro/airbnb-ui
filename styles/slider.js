@@ -1,14 +1,14 @@
-const { width } = Dimensions.get('window');
-import React from 'react';
 import { Dimensions } from 'react-native';
+const { height } = Dimensions.get('window');
+
 const styles = {
-  container: {
-    flex: 1,
-    justifyContent: 'center'
-  },
   image: {
-    flex: 1,
-    width
+    width: 320,
+    height: height - 200,
+    borderRadius: 20,
+    shadowOffset: { width: 10, height: 10 },
+    shadowColor: 'black',
+    shadowOpacity: 1.0
   }
 };
 

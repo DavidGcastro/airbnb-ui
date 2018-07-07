@@ -1,15 +1,12 @@
 const styles = {
   wrapper: {
-    backgroundColor: 'white',
-    flex: 1
-  },
-  container: {
     flex: 1,
+    paddingTop: 40,
+    paddingRight: 20,
+    paddingLeft: 20,
+    paddingBottom: 20,
     backgroundColor: '#fff',
-    marginTop: 40,
-    marginRight: 20,
-    marginLeft: 20,
-    marginBottom: 20,
+    alignContent: 'center'
   }
 };
 
