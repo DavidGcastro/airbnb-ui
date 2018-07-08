@@ -23,7 +23,7 @@ export default class App extends React.Component {
   }
   async componentDidMount() {
     await Font.loadAsync({
-      montserrat: require('./assets/fonts/Montserrat/Montserrat-Regular.ttf')
+      montserrat: require('./assets/fonts/Montserrat/Montserrat-Bold.ttf')
     });
     this.setState({ fontLoaded: true });
   }

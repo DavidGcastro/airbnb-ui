@@ -10,7 +10,9 @@ const Main = () => {
     <View style={styles.wrapper}>
       <Search />
       <Title />
-      <Slide />
+      <View>
+        <Slide />
+      </View>
     </View>
   );
 };
