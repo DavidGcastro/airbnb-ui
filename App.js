@@ -1,5 +1,4 @@
 import React from 'react';
-import { SafeAreaView } from 'react-native';
 import { Font, AppLoading } from 'expo';
 import { createStackNavigator } from 'react-navigation';
 // Screens

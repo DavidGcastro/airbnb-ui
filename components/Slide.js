@@ -4,7 +4,7 @@ import { Badge, Text } from 'native-base';
 import { Icon, Divider } from 'react-native-elements';
 import styles from '../styles/slider';
 
-const Slider = () => {
+const Slide = props => {
   return (
     <View>
       <ImageBackground
@@ -14,7 +14,7 @@ const Slider = () => {
           <View style={styles.topContainer}>
             <View
               style={{ flex: 1, flexDirection: 'row', alignItems: 'baseline' }}>
-              <Text style={styles.slideLabel}>NIGHTLIFE</Text>
+              <Text style={styles.slideLabel}>NIGHTWATCH</Text>
               <Badge style={styles.badge}>
                 <Text style={{ color: 'white' }}>2</Text>
               </Badge>
@@ -45,7 +45,7 @@ const Slider = () => {
                 fontSize: 20,
                 marginBottom: 20
               }}>
-              Discover The City's Party Scene
+              Checkout out this.
             </Text>
             <Divider style={{ backgroundColor: 'white' }} />
             <View
@@ -64,7 +64,7 @@ const Slider = () => {
                   type="MaterialIcons"
                   name="hourglass-empty"
                 />
-                <Text style={{ color: 'white' }}>4:00</Text>
+                <Text style={{ color: 'white' }}>10:00</Text>
               </View>
               <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
                 <Icon
@@ -82,4 +82,4 @@ const Slider = () => {
   );
 };
 
-export default Slider;
+export default Slide;
