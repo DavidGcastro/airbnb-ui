@@ -11,9 +11,8 @@ import Slider from './Slider';
 const Main = () => {
   return (
     <View style={styles.wrapper}>
-      <Search />
       <Title />
-      <Slide />
+      <Slider style={{ flex: 1, overflow: 'visible' }} />;
     </View>
   );
 };

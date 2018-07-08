@@ -1,10 +1,15 @@
+const { width, height } = Dimensions.get('window');
+import { Dimensions } from 'react-native';
+
 const styles = {
   wrapper: {
-    backgroundColor: '#fff',
-    alignContent: 'center',
+    width: '100%',
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
     paddingTop: 40,
-    paddingRight: 20,
-    paddingLeft: 20
+    paddingRight: 10,
+    paddingLeft: 10
   }
 };
 

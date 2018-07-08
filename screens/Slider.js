@@ -1,14 +1,14 @@
 import data from '../dummyData';
-import React, { Component } from 'react';
+import React from 'react';
 import { View } from 'react-native';
 import Swiper from 'react-native-swiper';
 import Slide from '../components/Slide';
+const Slider = () => {
+  return (
+    <Swiper style={{ overflow: 'visible' }} width={300}>
+      {data.map((data, i) => <Slide key={i} />)}
+    </Swiper>
+  );
+};
 
-export default class Slider extends Component {
-  constructor(props) {
-    super(props);
-  }
-  render() {
-    return <Swiper autoplay>{data.map((data, i) => <Slide key={i} />)}</Swiper>;
-  }
-}
+export default Slider;

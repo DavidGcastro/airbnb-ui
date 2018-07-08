@@ -3,7 +3,9 @@ const styles = {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'baseline',
-    paddingBottom: 20
+    paddingBottom: 20,
+    paddingLeft: 20,
+    paddingRight: 20
   },
   mainLabel: {
     paddingTop: 20,

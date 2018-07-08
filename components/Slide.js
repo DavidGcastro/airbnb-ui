@@ -6,11 +6,17 @@ import styles from '../styles/slider';
 
 const Slide = props => {
   return (
-    <View>
+    <View style={{ width: '100%' }}>
       <ImageBackground
         source={require('../assets/images/newyork-apt.jpg')}
         style={styles.image}>
-        <View style={{ flex: 1, justifyContent: 'space-between' }}>
+        <View
+          style={{
+            flex: 1,
+            justifyContent: 'space-between',
+            alignContent: 'center',
+            width: '100%'
+          }}>
           <View style={styles.topContainer}>
             <View
               style={{ flex: 1, flexDirection: 'row', alignItems: 'baseline' }}>

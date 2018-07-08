@@ -4,8 +4,7 @@ const { width, height } = Dimensions.get('window');
 const styles = {
   image: {
     width: '100%',
-    height: height - 200,
-    borderRadius: 25
+    height: height - 200
   },
   topContainer: {
     top: 20,
