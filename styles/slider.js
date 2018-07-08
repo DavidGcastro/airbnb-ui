@@ -3,16 +3,16 @@ const { width, height } = Dimensions.get('window');
 
 const styles = {
   image: {
-    width: width - 40,
+    width: '100%',
     height: height - 200,
-    borderRadius: 20,
-   // position: 'relative'
+    borderRadius: 25
   },
   topContainer: {
-    position: 'absolute',
-    top: 10,
-    left: 10,
-    flexDirection: 'row'
+    top: 20,
+    left: 20,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between'
   },
   slideLabel: {
     color: 'white',
@@ -21,17 +21,24 @@ const styles = {
     borderRadius: 5,
     paddingLeft: 10,
     paddingRight: 10,
-    paddingTop: 5,
-    paddingBottom: 5,
+    paddingTop: 3,
+    paddingBottom: 3,
     overflow: 'hidden',
     backgroundColor: '#FF5A5F',
-    letterSpacing: 0.5
+    letterSpacing: 0.5,
+    fontFamily: 'montserrat'
   },
   badge: {
     backgroundColor: '#FF5A5F',
     borderColor: 'white',
-    borderWidth: 1,
-    left: 2
+    borderWidth: 2,
+    top: 4,
+    margin: 3
+  },
+  price: {
+    color: 'white',
+    fontSize: 30,
+    fontFamily: 'montserrat'
   },
   bottomContainer: {
     flex: 1,
