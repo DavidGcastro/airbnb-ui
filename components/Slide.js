@@ -6,7 +6,11 @@ import styles from '../styles/slider';
 
 const Slide = props => {
   return (
-    <View style={{ width: '100%' }}>
+    <View
+      style={{
+        width: '100%',
+       
+      }}>
       <ImageBackground
         source={require('../assets/images/newyork-apt.jpg')}
         style={styles.image}>
@@ -20,7 +24,7 @@ const Slide = props => {
           <View style={styles.topContainer}>
             <View
               style={{ flex: 1, flexDirection: 'row', alignItems: 'baseline' }}>
-              <Text style={styles.slideLabel}>NIGHTWATCH</Text>
+              <Text style={styles.slideLabel}>NIGHTLIFE</Text>
               <Badge style={styles.badge}>
                 <Text style={{ color: 'white' }}>2</Text>
               </Badge>

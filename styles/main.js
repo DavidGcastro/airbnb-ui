@@ -6,6 +6,7 @@ const styles = {
     width: '100%',
     flex: 1,
     justifyContent: 'center',
+    position: 'absolute',
     alignItems: 'center',
     paddingTop: 40,
     paddingRight: 10,

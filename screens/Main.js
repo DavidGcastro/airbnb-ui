@@ -12,7 +12,14 @@ const Main = () => {
   return (
     <View style={styles.wrapper}>
       <Title />
-      <Slider style={{ flex: 1, overflow: 'visible' }} />;
+      <Slider
+        style={{
+          flex: 1,
+          overflow: 'visible',
+          borderWidth: 1,
+          borderColor: 'red'
+        }}
+      />;
     </View>
   );
 };
