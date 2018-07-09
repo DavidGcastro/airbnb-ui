@@ -1,95 +1,200 @@
 import React from 'react';
-import { ImageBackground, View } from 'react-native';
+import { ImageBackground, View, Image } from 'react-native';
 import { Badge, Text } from 'native-base';
 import { Icon, Divider } from 'react-native-elements';
 import styles from '../styles/slider';
 
 const Slide = props => {
   return (
-    <View
-      style={{
-        width: '100%',
-       
-      }}>
-      <ImageBackground
+    <View style={styles.mainContainer}>
+      <Image
         source={require('../assets/images/newyork-apt.jpg')}
-        style={styles.image}>
-        <View
-          style={{
-            flex: 1,
-            justifyContent: 'space-between',
-            alignContent: 'center',
-            width: '100%'
-          }}>
-          <View style={styles.topContainer}>
-            <View
-              style={{ flex: 1, flexDirection: 'row', alignItems: 'baseline' }}>
-              <Text style={styles.slideLabel}>NIGHTLIFE</Text>
-              <Badge style={styles.badge}>
-                <Text style={{ color: 'white' }}>2</Text>
-              </Badge>
-            </View>
-            <View
-              style={{
-                flexDirection: 'row',
-                left: -40
-              }}>
-              <Text style={styles.price}>$ 10</Text>
-            </View>
+        style={styles.image}
+      />
+      <View
+        style={{
+          justifyContent: 'space-between',
+          alignContent: 'center',
+          width: '100%'
+        }}>
+        <View style={styles.topContainer}>
+          <View
+            style={{
+              flex: 1,
+              flexDirection: 'row',
+              alignItems: 'baseline',
+              position: 'relative'
+            }}>
+            <Text style={styles.slideLabel}>NIGHTLIFE</Text>
+            <Badge style={styles.badge}>
+              <Text style={{ color: 'white' }}>2</Text>
+            </Badge>
           </View>
-          {/*BOTTOM*/}
-          <View style={{ padding: 15, justifyContent: 'space-between' }}>
+          <View
+            style={{
+              flexDirection: 'row',
+              left: -40
+            }}>
+            <Text style={styles.price}>$ 10</Text>
+          </View>
+        </View>
+        {/*BOTTOM*/}
+        <View style={styles.bottomContainer}>
+          <View
+            style={{
+              flexDirection: 'row',
+              justifyContent: 'flex-end',
+              marginBottom: 30
+            }}>
+            <Icon
+              style={{ paddingLeft: 10 }}
+              type="feather"
+              name="upload"
+              color="white"
+            />
+            <Icon
+              iconStyle={{ padding: 10 }}
+              type="feather"
+              name="heart"
+              color="white"
+            />
+          </View>
+          <Text
+            style={{
+              fontFamily: 'montserrat',
+              color: 'white',
+              fontSize: 25,
+              marginBottom: 20
+            }}>
+            Discover the City's Party
+          </Text>
+          <Divider style={{ backgroundColor: 'white' }} />
+          <View
+            style={{
+              marginTop: 20,
+              flexDirection: 'row',
+              justifyContent: 'space-between'
+            }}>
             <View
               style={{
                 flexDirection: 'row',
-                justifyContent: 'flex-end',
-                marginBottom: 30
+                alignItems: 'flex-end'
               }}>
-              <Icon type="feather" name="upload" color="white" />
-              <Icon type="feather" name="heart" color="white" />
+              <Icon
+                size={15}
+                color="white"
+                type="MaterialIcons"
+                name="hourglass-empty"
+              />
+              <Text style={{ color: 'white', fontSize: 12 }}>10:00</Text>
             </View>
-            <Text
-              style={{
-                fontFamily: 'montserrat',
-                color: 'white',
-                fontSize: 20,
-                marginBottom: 20
-              }}>
-              Checkout out this.
-            </Text>
-            <Divider style={{ backgroundColor: 'white' }} />
             <View
               style={{
-                marginTop: 20,
                 flexDirection: 'row',
-                justifyContent: 'space-between'
+                alignItems: 'flex-start'
               }}>
-              <View
-                style={{
-                  flexDirection: 'row',
-                  alignItems: 'flex-end'
-                }}>
-                <Icon
-                  color="white"
-                  type="MaterialIcons"
-                  name="hourglass-empty"
-                />
-                <Text style={{ color: 'white' }}>10:00</Text>
-              </View>
-              <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
-                <Icon
-                  color="white"
-                  type="MaterialIcons"
-                  name="chat-bubble-outline"
-                />
-                <Text style={{ color: 'white' }}>English</Text>
-              </View>
+              <Icon
+                size={15}
+                color="white"
+                type="MaterialIcons"
+                name="chat-bubble-outline"
+              />
+              <Text style={{ color: 'white', fontSize: 12, paddingLeft: 4 }}>
+                English
+              </Text>
             </View>
           </View>
         </View>
-      </ImageBackground>
+      </View>
     </View>
   );
 };
 
 export default Slide;
+
+// const Slide = props => {
+//   return (
+//     <View
+//       style={{
+//         width: '100%'
+//       }}>
+//       <ImageBackground
+//         source={require('../assets/images/newyork-apt.jpg')}
+//         style={styles.image}>
+//         <View
+//           style={{
+//             flex: 1,
+//             justifyContent: 'space-between',
+//             alignContent: 'center',
+//             width: '100%'
+//           }}>
+//           <View style={styles.topContainer}>
+//             <View
+//               style={{ flex: 1, flexDirection: 'row', alignItems: 'baseline' }}>
+//               <Text style={styles.slideLabel}>NIGHTLIFE</Text>
+//               <Badge style={styles.badge}>
+//                 <Text style={{ color: 'white' }}>2</Text>
+//               </Badge>
+//             </View>
+//             <View
+//               style={{
+//                 flexDirection: 'row',
+//                 left: -40
+//               }}>
+//               <Text style={styles.price}>$ 10</Text>
+//             </View>
+//           </View>
+//           {/*BOTTOM*/}
+//           <View style={{ padding: 15, justifyContent: 'space-between' }}>
+//             <View
+//               style={{
+//                 flexDirection: 'row',
+//                 justifyContent: 'flex-end',
+//                 marginBottom: 30
+//               }}>
+//               <Icon type="feather" name="upload" color="white" />
+//               <Icon type="feather" name="heart" color="white" />
+//             </View>
+//             <Text
+//               style={{
+//                 fontFamily: 'montserrat',
+//                 color: 'white',
+//                 fontSize: 20,
+//                 marginBottom: 20
+//               }}>
+//               Checkout out this.
+//             </Text>
+//             <Divider style={{ backgroundColor: 'white' }} />
+//             <View
+//               style={{
+//                 marginTop: 20,
+//                 flexDirection: 'row',
+//                 justifyContent: 'space-between'
+//               }}>
+//               <View
+//                 style={{
+//                   flexDirection: 'row',
+//                   alignItems: 'flex-end'
+//                 }}>
+//                 <Icon
+//                   color="white"
+//                   type="MaterialIcons"
+//                   name="hourglass-empty"
+//                 />
+//                 <Text style={{ color: 'white' }}>10:00</Text>
+//               </View>
+//               <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
+//                 <Icon
+//                   color="white"
+//                   type="MaterialIcons"
+//                   name="chat-bubble-outline"
+//                 />
+//                 <Text style={{ color: 'white' }}>English</Text>
+//               </View>
+//             </View>
+//           </View>
+//         </View>
+//       </ImageBackground>
+//     </View>
+//   );
+// };
