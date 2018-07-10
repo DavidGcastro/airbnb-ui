@@ -6,7 +6,7 @@ import styles from '../styles/slider';
 
 const Slide = props => {
   return (
-    <View style={{ }}>
+    <View style={{ marginRight: 10, marginLeft: 10 }}>
       <Image
         source={require('../assets/images/newyork-apt.jpg')}
         style={styles.image}
@@ -73,7 +73,8 @@ const Slide = props => {
             style={{
               marginTop: 20,
               flexDirection: 'row',
-              justifyContent: 'space-between'
+              alignItems: 'flex-start',
+              justifyContent: 'space-around'
             }}>
             <View
               style={{
@@ -86,7 +87,7 @@ const Slide = props => {
                 type="MaterialIcons"
                 name="hourglass-empty"
               />
-              <Text style={{ color: 'white', fontSize: 12 }}>10:00</Text>
+              <Text style={{ color: 'white', fontSize: 12 }}>4:00</Text>
             </View>
             <View
               style={{
@@ -102,6 +103,9 @@ const Slide = props => {
               <Text style={{ color: 'white', fontSize: 12, paddingLeft: 4 }}>
                 English
               </Text>
+            </View>
+            <View style={{ alignContent: 'flex-end' }}>
+              <Text> Revies </Text>
             </View>
           </View>
         </View>
