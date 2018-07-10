@@ -13,11 +13,9 @@ const Main = () => {
     <View style={styles.wrapper}>
       <Title />
       <Slider
+      
         style={{
-          flex: 1,
-          overflow: 'visible',
-          borderWidth: 1,
-          borderColor: 'red'
+          overflow: 'visible'
         }}
       />;
     </View>

@@ -4,11 +4,14 @@ const { width, height } = Dimensions.get('window');
 const styles = {
   image: {
     width: '100%',
-    height: height - 200
+    height: height - 175,
+    borderRadius: 10,
+    position: 'absolute'
   },
   topContainer: {
     top: 20,
     left: 20,
+    position: 'absolute',
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between'
@@ -34,17 +37,14 @@ const styles = {
     top: 4,
     margin: 3
   },
+  bottomContainer: {
+    top: height - 400,
+    padding: 20
+  },
   price: {
     color: 'white',
     fontSize: 30,
     fontFamily: 'montserrat'
-  },
-  bottomContainer: {
-    flex: 1,
-    justifyContent: 'center',
-    alignContent: 'center',
-    position: 'absolute',
-    bottom: 100
   },
   iconContainer: {
     flexDirection: 'row',
