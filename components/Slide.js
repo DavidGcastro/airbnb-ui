@@ -7,10 +7,7 @@ import styles from '../styles/slider';
 const Slide = props => {
   return (
     <View style={{ marginRight: 10, marginLeft: 10 }}>
-      <Image
-        source={require('../assets/images/newyork-apt.jpg')}
-        style={styles.image}
-      />
+      <Image source={{ uri: props.data.imageURL }} style={styles.image} />
       <View
         style={{
           justifyContent: 'space-between',
@@ -25,9 +22,9 @@ const Slide = props => {
               alignItems: 'baseline',
               position: 'relative'
             }}>
-            <Text style={styles.slideLabel}>NIGHTLIFE</Text>
+            <Text style={styles.slideLabel}>{props.data.category}</Text>
             <Badge style={styles.badge}>
-              <Text style={{ color: 'white' }}>2</Text>
+              <Text style={{ color: 'white' }}>{props.data.badgeNumber}</Text>
             </Badge>
           </View>
           <View
@@ -35,7 +32,7 @@ const Slide = props => {
               flexDirection: 'row',
               left: -40
             }}>
-            <Text style={styles.price}>$ 10</Text>
+            <Text style={styles.price}>{props.data.price}</Text>
           </View>
         </View>
         {/*BOTTOM*/}
@@ -66,46 +63,71 @@ const Slide = props => {
               fontSize: 25,
               marginBottom: 20
             }}>
-            Discover the City's Party Scene
+            {props.data.tag}
           </Text>
           <Divider style={{ backgroundColor: 'white' }} />
+          {/*BOTTOM ICONS*/}
           <View
             style={{
               marginTop: 20,
               flexDirection: 'row',
               alignItems: 'flex-start',
-              justifyContent: 'space-around'
+         
             }}>
             <View
               style={{
                 flexDirection: 'row',
-                alignItems: 'flex-end'
+                justifyContent: 'space-between',
+                flex: 2
               }}>
-              <Icon
-                size={15}
-                color="white"
-                type="MaterialIcons"
-                name="hourglass-empty"
-              />
-              <Text style={{ color: 'white', fontSize: 12 }}>4:00</Text>
+              <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
+                <Icon
+                  size={15}
+                  color="white"
+                  type="MaterialIcons"
+                  name="hourglass-empty"
+                />
+                <Text style={{ color: 'white', fontSize: 12 }}>
+                  {props.data.time}
+                </Text>
+              </View>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'flex-start'
+                }}>
+                <Icon
+                  size={15}
+                  color="white"
+                  type="MaterialIcons"
+                  name="chat-bubble-outline"
+                />
+                <Text style={{ color: 'white', fontSize: 12, paddingLeft: 4 }}>
+                  {props.data.language}
+                </Text>
+              </View>
             </View>
             <View
               style={{
                 flexDirection: 'row',
-                alignItems: 'flex-start'
+                flex: 3,
+                justifyContent: 'flex-end'
               }}>
+              {/* IDEALLY MAP THRU RATING NUMBER */}
+              <Icon size={15} color="white" type="MaterialIcons" name="star" />
+              <Icon size={15} color="white" type="MaterialIcons" name="star" />
+              <Icon size={15} color="white" type="MaterialIcons" name="star" />
+              <Icon size={15} color="white" type="MaterialIcons" name="star" />
               <Icon
                 size={15}
                 color="white"
                 type="MaterialIcons"
-                name="chat-bubble-outline"
+                name="star-border"
               />
-              <Text style={{ color: 'white', fontSize: 12, paddingLeft: 4 }}>
-                English
+              <Text style={{ color: 'white', fontSize: 12 }}>
+                {' '}
+                {props.data.reviews} Reviews
               </Text>
-            </View>
-            <View style={{ alignContent: 'flex-end' }}>
-              <Text> Revies </Text>
             </View>
           </View>
         </View>
