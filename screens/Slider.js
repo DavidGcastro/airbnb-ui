@@ -1,6 +1,6 @@
 import data from '../dummyData';
 import React from 'react';
-import { View } from 'react-native';
+import { Scroll } from 'react-native';
 import Swiper from 'react-native-swiper';
 import Slide from '../components/Slide';
 const Slider = () => {
@@ -12,3 +12,4 @@ const Slider = () => {
 };
 
 export default Slider;
+

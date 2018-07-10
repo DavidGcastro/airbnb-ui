@@ -6,7 +6,7 @@ import styles from '../styles/slider';
 
 const Slide = props => {
   return (
-    <View>
+    <View style={{ }}>
       <Image
         source={require('../assets/images/newyork-apt.jpg')}
         style={styles.image}
@@ -66,7 +66,7 @@ const Slide = props => {
               fontSize: 25,
               marginBottom: 20
             }}>
-            Discover the City's Party
+            Discover the City's Party Scene
           </Text>
           <Divider style={{ backgroundColor: 'white' }} />
           <View

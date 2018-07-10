@@ -9,9 +9,7 @@ const styles = {
     position: 'absolute',
     alignItems: 'center',
     paddingTop: 40,
-    paddingRight: 10,
-    paddingLeft: 10,
-    backgroundColor: 'white'
+    backgroundColor: 'pink'
   }
 };
 

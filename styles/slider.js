@@ -2,6 +2,12 @@ import { Dimensions } from 'react-native';
 const { width, height } = Dimensions.get('window');
 
 const styles = {
+  mainContainer: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
   image: {
     width: '100%',
     height: height - 175,
