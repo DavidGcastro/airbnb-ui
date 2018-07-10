@@ -6,7 +6,7 @@ import styles from '../styles/slider';
 
 const Slide = props => {
   return (
-    <View style={styles.mainContainer}>
+    <View>
       <Image
         source={require('../assets/images/newyork-apt.jpg')}
         style={styles.image}

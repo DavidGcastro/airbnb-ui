@@ -2,11 +2,6 @@ import { Dimensions } from 'react-native';
 const { width, height } = Dimensions.get('window');
 
 const styles = {
-  mainContainer: {
-    width: '100%',
-    overflow: 'visible'
-  },
-
   image: {
     width: '100%',
     height: height - 175,
@@ -55,8 +50,7 @@ const styles = {
     flexDirection: 'row',
     alignItems: 'flex-end',
     left: 250,
-    marginBottom: 20,
-    
+    marginBottom: 20
   }
 };
 
