@@ -44,7 +44,8 @@ const styles = {
     margin: 3
   },
   bottomContainer: {
-    top: 400,
+    position: 'absolute',
+    bottom: 20,
     padding: 20
   },
   price: {
