@@ -1,4 +1,3 @@
-const { width, height } = Dimensions.get('window');
 import { Dimensions } from 'react-native';
 
 const styles = {
@@ -9,8 +8,8 @@ const styles = {
     position: 'absolute',
     alignItems: 'center',
     paddingTop: 40,
-    paddingRight: 10,
     paddingLeft: 10,
+    paddingRight: 10,
     backgroundColor: 'white'
   }
 };

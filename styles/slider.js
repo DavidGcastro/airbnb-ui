@@ -1,12 +1,18 @@
 import { Dimensions } from 'react-native';
-const { width, height } = Dimensions.get('window');
+const { height } = Dimensions.get('window');
 
 const styles = {
+  mainContainer: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
   image: {
     width: '100%',
-    height: height - 175,
+    height: height - 160,
     borderRadius: 10,
-    position: 'absolute'
+    position: 'relative'
   },
   topContainer: {
     top: 20,
@@ -20,37 +26,32 @@ const styles = {
     color: 'white',
     borderWidth: 0,
     fontSize: 15,
-    borderRadius: 5,
+    borderRadius: 3,
     paddingLeft: 10,
     paddingRight: 10,
     paddingTop: 3,
     paddingBottom: 3,
     overflow: 'hidden',
-    backgroundColor: '#FF5A5F',
+    backgroundColor: '#FF5F53',
     letterSpacing: 0.5,
     fontFamily: 'montserrat'
   },
   badge: {
-    backgroundColor: '#FF5A5F',
+    backgroundColor: '#FF5F53',
     borderColor: 'white',
     borderWidth: 2,
     top: 4,
     margin: 3
   },
   bottomContainer: {
-    top: height - 400,
+    position: 'absolute',
+    bottom: 20,
     padding: 20
   },
   price: {
     color: 'white',
     fontSize: 30,
     fontFamily: 'montserrat'
-  },
-  iconContainer: {
-    flexDirection: 'row',
-    alignItems: 'flex-end',
-    left: 250,
-    marginBottom: 20
   }
 };
 
