@@ -12,7 +12,8 @@ const Slide = props => {
         style={{
           justifyContent: 'space-between',
           alignContent: 'center',
-          width: '100%'
+          width: '100%',
+          position: 'absolute'
         }}>
         <View style={styles.topContainer}>
           <View
@@ -71,8 +72,7 @@ const Slide = props => {
             style={{
               marginTop: 20,
               flexDirection: 'row',
-              alignItems: 'flex-start',
-         
+              alignItems: 'flex-start'
             }}>
             <View
               style={{

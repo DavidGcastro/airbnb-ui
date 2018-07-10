@@ -10,9 +10,9 @@ const styles = {
   },
   image: {
     width: '100%',
-    height: height - 150,
+    height: height - 160,
     borderRadius: 10,
-    position: 'absolute'
+    position: 'relative'
   },
   topContainer: {
     top: 20,
@@ -44,7 +44,7 @@ const styles = {
     margin: 3
   },
   bottomContainer: {
-    top: height - 400,
+    top: 400,
     padding: 20
   },
   price: {
